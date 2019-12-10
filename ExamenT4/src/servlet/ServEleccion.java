@@ -27,6 +27,7 @@ public class ServEleccion extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		HttpSession session = request.getSession(true);
 
+		
 		// extraemos del formulario los datos
 		String eleccion = request.getParameter("eleccion");
 		int i = Integer.parseInt(eleccion);
